@@ -5,7 +5,7 @@
 <input type="email" name="email">
 <label>password:</label>
 <input type="password" name="password">
-<button type="submit">Login</button>
+<button type="submit" class="btn btn-primary">Login</button>
 
 
 </form>
