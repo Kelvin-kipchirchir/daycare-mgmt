@@ -1,4 +1,5 @@
-<html>
+@include('pages.index');
+<h1>user login</h1>
 <form method="post" action="/">
 @csrf
 <label>Email:</label>
