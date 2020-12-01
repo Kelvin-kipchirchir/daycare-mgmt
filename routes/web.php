@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'pages.login');
+Route::view('/', 'pages.index');
+Route::view('login', 'pages.login');
+Route::view('register', 'pages.register');
 Route::post('/', 'AccountController@create');
 Route::view('/register', 'pages.register');
 Route::post('/register', 'AccountController@store');
