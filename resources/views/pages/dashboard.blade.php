@@ -1,5 +1,10 @@
+<!DOCTYPE html>
 <html>
-@foreach($users as $user)
-    {{$user->username}}
-@endforeach    
-</html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+
+</body>
+</html
