@@ -13,7 +13,7 @@ class AccountController extends Controller
     function create(Request $request){
         $credentials=$request->only('email','password');
         if(Auth::attempt($credentials)){
-return view('pages.dashboard');
+         return view('pages.dashboard');
         }else{
             return back();
         }
@@ -38,7 +38,7 @@ return view('pages.dashboard');
      function show(Request $req){
 
         $users= User::all();
-        return view('pages.dashboard',compact('users'));
+        return view('pages.users',compact('users'));
 
 
      }
