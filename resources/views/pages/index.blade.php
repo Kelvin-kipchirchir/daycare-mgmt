@@ -8,7 +8,7 @@
 <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 </head>
 <header>
-	<h2>The little lambs</h2><img src="{{url('/images/hand.jpg')}}" alt="image">
+	<h2>The little lambs</h2><img src="{{url('/images/hand.jpg')}}" alt="image" style="width: 100px;height: 40px">
 	<a href="register" class="btn btn-primary text-right mt-2" style="float: right;">register</a>
 	<a href="login" class="btn btn-primary text-right mt-2" style="float: right;">login</a>
 	</header>
