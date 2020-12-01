@@ -13,17 +13,24 @@ class AccountController extends Controller
     function create(Request $request){
         $credentials=$request->only('email','password');
         if(Auth::attempt($credentials)){
-echo "niceee";
+return view('pages.dashboard');
         }else{
             return back();
         }
     }
      function store(Request $request){
+        $request->validate([
+            'username'=>'required|max:255',
+            'email'=>'required|email|max:255',
+            'password'=>'required|max:15|min:5'
+        ]);
+        
          $user=new User;
          $user->username=$request->input('username');
          $user->email=$request->input('email');
          $user->password=Hash::make($request->input('password'));
          $user->save();
+        
          
 
      }
