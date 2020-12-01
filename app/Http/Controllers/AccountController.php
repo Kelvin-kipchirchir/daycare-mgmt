@@ -13,7 +13,7 @@ class AccountController extends Controller
     function create(Request $request){
         $request->validate([
             'email'=>'required|email|max:255',
-            'password'=>'required|max:255|min:255';
+            'password'=>'required|max:255|min:255'
 
         ]);
         $credentials=$request->only('email','password');
