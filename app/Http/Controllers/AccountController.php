@@ -12,15 +12,16 @@ class AccountController extends Controller
 
     function create(Request $request){
         $request->validate([
-            'email'=>'required|email|max:255',
-            'password'=>'required|max:255|min:255'
+            'email'=>'required|email|max:15',
+            'password'=>'required|max:50|min:5'
 
         ]);
         $credentials=$request->only('email','password');
         if(Auth::attempt($credentials)){
          return view('pages.dashboard');
         }else{
-            return back();
+            $mess="user not found";
+            return back('mess');
         }
     }
      function store(Request $request){
