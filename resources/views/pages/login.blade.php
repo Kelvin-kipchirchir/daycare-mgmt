@@ -7,6 +7,7 @@
 <label>password:</label><br>
 <input type="password" name="password"><br><br>
 <button type="submit" class="btn btn-primary">Login</button>
+<p>eithout an account???</p><a href="no_account">sigh up</a>
 </form>
 @if ($errors->any())
     <div class="alert alert-danger">
