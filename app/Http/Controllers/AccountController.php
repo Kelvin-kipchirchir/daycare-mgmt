@@ -20,15 +20,17 @@ class AccountController extends Controller
         if(Auth::attempt($credentials)){
          return view('pages.dashboard');
         }else{
-            $mess="user not found";
-            return back('mess');
+            //$mess="user not found";
+            return back();
         }
     }
      function store(Request $request){
         $request->validate([
             'username'=>'required|max:255',
             'email'=>'required|email|max:255',
-            'password'=>'required|max:15|min:5'
+            'password'=>'required|max:15|min:5',
+            'cpass'=>'required|max:15|min:5'
+            //password can add a number of characters such as:'regex:/[a-z]/','regex:/[A-Z]/','regex:[0-9]/','regex:[@$*#!]/',
         ]);
         
          $user=new User;
