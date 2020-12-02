@@ -21,3 +21,5 @@ Route::view('/register', 'pages.register');
 Route::post('/register', 'AccountController@store');
 Route::get('/get','AccountController@show');
 Route::view('dashboard','pages.dashboard');
+Route::view('to_account','pages.login');
+Route::view('no_account','pages.register');
