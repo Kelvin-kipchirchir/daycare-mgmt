@@ -23,3 +23,4 @@ Route::get('/get','AccountController@show');
 Route::view('dashboard','pages.dashboard');
 Route::view('to_account','pages.login');
 Route::view('no_account','pages.register');
+Route::get('/logout','AccountController@log');
