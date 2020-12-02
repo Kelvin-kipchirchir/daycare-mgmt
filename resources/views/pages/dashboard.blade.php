@@ -9,6 +9,11 @@
 </head>
 <header>activities platform <a href='logout' style="float:right"; class="btn btn-primary";>sighout</a></header>
 <body>
-<div><div>
+@section('sidebar')
+<a href="all_users">records</a>
+@show
+<div class="container" style="background-color='red'";>
+@yield('content')
+</div>
 </body>
 </html
