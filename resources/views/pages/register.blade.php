@@ -15,6 +15,7 @@
 <label> confirm password:</label><br>
 <input type="password" name="cpass"><br><br>
 <button type="submit" class="btn btn-primary">Register</button>
+ <p>having an account??</p><a href="to_account">click here</a>
 </form>
 @if ($errors->any())
     <div class="alert alert-danger">
